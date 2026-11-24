@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --strict-markers"
+markers = [
+    "smoke: quick checks that run on every PR",
+    "regression: full suite, runs nightly",
+]
