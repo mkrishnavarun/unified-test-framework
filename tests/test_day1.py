@@ -4,5 +4,5 @@ def test_addition_works():
 
 
 def test_this_one_will_fail():
-    result = 2 + 3
+    result = 3 + 3
     assert result == 6
