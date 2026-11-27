@@ -26,6 +26,7 @@ def test_valid_password_is_accepted():
         pytest.param("short1", False, id="too-short"),
         pytest.param("nodigitshere", False, id="no-digit"),
         pytest.param("", False, id="empty"),
+        pytest.param("abcdefg1", True, id="exactly-8-with-digit"),  # <- new line
     ],
 )
 def test_password_rules(password, expected):

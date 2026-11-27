@@ -3,6 +3,6 @@ def test_addition_works():
     assert result == 5
 
 
-def test_this_one_will_fail():
+def test_addition_result_is_five():
     result = 3 + 3
     assert result == 6
